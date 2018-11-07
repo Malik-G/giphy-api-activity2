@@ -9,9 +9,9 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 // Reducer that holds our results
-const random = (state = {}, action) => {
+const random = (state = [], action) => {
     if(action.type === 'SET_RANDOM') {
-        return action.payload;
+        state = [action.payload];
     }
     return state;
 }
