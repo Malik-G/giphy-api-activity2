@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import './App.css';
 import axios from 'axios'
-import {connect} from 'react-redux';
 
 class App extends Component {
-  // Renders the entire app on the DOM
-
   
   componentDidMount(){
     this.getRandom();
@@ -34,8 +32,7 @@ class App extends Component {
           <h1>Random Giphy API</h1>
         </header>
         {this.props.reduxState.random.map( image => (
-          
-        <img src={image.downsized_large.url}/>
+          <img src={image.downsized_medium.url} alt="Random Giphy Pic"/>
         ))}
       </div>
     );

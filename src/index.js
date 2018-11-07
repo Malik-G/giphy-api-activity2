@@ -11,7 +11,7 @@ import logger from 'redux-logger';
 // Reducer that holds our results
 const random = (state = [], action) => {
     if(action.type === 'SET_RANDOM') {
-        state = [action.payload];
+        state = [...state, action.payload];
     }
     return state;
 }
