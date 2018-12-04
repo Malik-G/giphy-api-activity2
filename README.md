@@ -1,6 +1,6 @@
 # Giphy API Activity
 
-Using a third party API is very similar to using routes on a server. The big difference is that you'll likely get back much more data than you're used to. In this activity, you will be using Axios on the server to make requests to the Giphy API.
+In this activity I did at Prime Digital Academy. I used Axios on the server to make requests to Giphy's API.
 
 ## Setup
 
@@ -18,11 +18,11 @@ Using a third party API is very similar to using routes on a server. The big dif
     - `npm run server`
     - `npm run client`
 
-## Task List
+## My Task List
 
 - [ ] Make a `GET` request to Giphy from the `/random` router on your **server**, send the response from Giphy back to the client
-- [ ] Make a `GET` request from your **client** to your `/random` route, save the response data in Redux
-- [ ] Display the random gif on the page, spend some time looking through the response! Some of the properties returned look like image paths but aren't.
+- [ ] Make a `GET` request from the **client** to the `/random` route, save the response data in Redux
+- [ ] Display the random gif on the page
 - [ ] Add a button that allows the user to refresh the results by making another `GET` request to `/random`
 
 ## Stretch Goals
