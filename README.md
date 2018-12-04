@@ -1,18 +1,18 @@
 # Giphy API Activity
 
-In this activity I did at Prime Digital Academy. I used Axios on the server to make requests to Giphy's API.
+This is an activity that I did at Prime Digital Academy. I used Axios on the server to make requests to Giphy's API.
 
 ## Setup
 
-1. Read through the [Giphy documentation](https://developers.giphy.com/) to determine which endpoints you need to complete this app.
+1. Read through the [Giphy documentation](https://developers.giphy.com/) to determine which endpoints are needed to complete the app.
 
-2. Register an account in order to get your `API Key`. This key is used for all of your requests to authenticate your app to Giphy.
+2. Register an account in order to get your `API Key`. This key is used for all of your requests to authenticate the app to Giphy.
 
-3. Create a `.env` file and add your API key.
+3. Create a `.env` file and add your API key. Remeber to include your .env file inside of your .gitignore file. 
 
     `GIPHY_API_KEY=YOUR_KEY_GOES_HERE`
 
-4. Spin up your app:
+4. Start the app:
 
     - `npm install`
     - `npm run server`
