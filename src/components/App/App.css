@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(50,50,50);
   height: 120px;
   padding: 20px;
   color: white;
@@ -26,3 +26,7 @@ img {
   margin-top: 50px;
   margin-left: 215px;
 }
+
+a, a:visited, a:hover, a:active {
+   color: inherit;
+ }

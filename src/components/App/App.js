@@ -5,7 +5,11 @@ import axios from 'axios'
 
 class App extends Component {
   
-  componentDidMount(){
+   state = {
+      one: true
+   }
+   
+   componentDidMount(){
     this.getRandom();
   }
 
@@ -19,17 +23,24 @@ class App extends Component {
       this.props.dispatch({
         type: 'SET_RANDOM',
         payload: response.data.images})
+        this.setState({one: !this.state.one})
     })
     .catch((error) => {
       console.log('GET request unsuccessful...', error);
     })
   }
 
+  pageRefresh = () => {
+   //   this.setState({one: !this.state.one})
+  }
+
   render() {
     return (
       <div>
         <header className="App-header">
-          <h1>Random Giphy API</h1>
+          <h1 style={{textAlign: "center"}}>Random Giphy API</h1>
+          <p>Click <button onClick={this.getRandom}>THIS</button> button to generate a random gif from <a href="https://giphy.com/">Giphy</a></p>
+          <p>Refresh the page for a clean slate...</p>
         </header>
         {this.props.reduxState.random.map( image => (
           <img src={image.downsized_medium.url} alt="Random Giphy Pic"/>
